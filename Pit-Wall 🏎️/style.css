@@ -1,0 +1,661 @@
+
+:root {
+  --black: #0b0b0f;
+  --panel: #16161d;
+  --red: #e10600;
+  --white: #f5f5f7;
+  --primary: #2c3e50; /* azul bem escuro: títulos, cabeçalho da tabela */
+  --blue: #3498db; /* azul: botão principal e editar */
+  --blue-dark: #2980b9; /* azul escuro: hover */
+  --green: #27ae60; /* verde: botão de músicas */
+  --red-dark: #c0392b;
+  --bg: #f0f2f5; /* fundo cinza claro da página */
+  --surface: #ffffff; /* fundo dos cartões */
+  --border: #dde1e7; /* cor das bordas */
+  --text: #2c3e50;
+  --text-muted: #6c757d; /* texto cinza, menos importante */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08); /* sombra fraca */
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1); /* sombra média */
+  --radius: 8px; /* arredondamento dos cantos */
+  --font: "Titillium Web", "Segoe UI", sans-serif;
+
+  /* Variáveis utilizadas no projeto */
+  --line: #303039;
+  --muted: #a1a1aa;
+  --ferrari: #e10600;
+  --mclaren: #ff8700;
+  --mercedes: #00a19c;
+  --audi: #bb0000;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--black);
+  color: var(--white);
+}
+
+/* CABEÇALHO */
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  border-bottom: 1px solid var(--line);
+  gap: 20px;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--red);
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: var(--red);
+}
+
+/* BOTÕES */
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--red-dark);
+}
+
+.btn-outline {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* DESTAQUE PRINCIPAL */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 520px;
+  padding: 70px 7%;
+  background:
+    linear-gradient(
+      110deg,
+      var(--black) 0%,
+      var(--black) 62%,
+      var(--red) 62%,
+      var(--red) 64%,
+      rgba(11, 11, 15, 0.35) 64%
+    ),
+    url("img/F1.jpg") right center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--red);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: 5.5rem;
+  line-height: 0.95;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  display: block;
+  color: var(--red);
+}
+
+.hero-description {
+  max-width: 480px;
+  margin: 25px 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-number {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 12rem;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* INFORMAÇÕES DA PISTA */
+
+.track-info {
+  display: flex;
+  gap: 35px;
+  margin-top: 45px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  border-left: 1px solid var(--line);
+}
+
+.info strong {
+  font-size: 1.8rem;
+}
+
+.info span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* DETALHE VISUAL DA PISTA */
+
+.kerb {
+  height: 12px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--red) 0,
+    var(--red) 40px,
+    var(--white) 40px,
+    var(--white) 80px
+  );
+}
+
+/* 0 a 40px: vermelho */
+/* 40 a 80px: branco */
+/* depois: repete tudo! */
+
+/* SEÇÕES */
+
+.section {
+  padding: 75px 7%;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 2.7rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.section-heading h2 span {
+  color: var(--red);
+}
+
+.section-heading p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.section-number {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+/* GRID DE PILOTOS */
+
+.drivers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.driver-card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 210px;
+  padding: 25px;
+  overflow: hidden;
+  background: var(--panel);
+  border-top: 5px solid var(--team);
+  transition: 0.3s;
+}
+
+.team-ferrari {
+  --team: var(--ferrari);
+}
+
+.team-mclaren {
+  --team: var(--mclaren);
+}
+
+.team-mercedes {
+  --team: var(--mercedes);
+}
+
+.team-audi {
+  --team: var(--audi);
+}
+
+.driver-card:hover {
+  transform: translateY(-6px);
+}
+
+.car-number {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 900;
+  opacity: 0.15;
+}
+
+.driver-details {
+  position: relative;
+  z-index: 1;
+}
+
+.driver-details h3 {
+  margin: 8px 0 3px;
+  font-size: 1.4rem;
+}
+
+.driver-details p {
+  color: var(--muted);
+}
+
+.bar {
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: var(--team);
+}
+
+/* CLASSIFICAÇÃO */
+
+.filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.form-group label {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  outline: none;
+  background: var(--panel);
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--red);
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  color: var(--muted);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+td {
+  font-size: 0.95rem;
+}
+
+.pos {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--white);
+  color: var(--black);
+  font-weight: 900;
+}
+
+.leader {
+  background: rgba(225, 6, 0, 0.12);
+}
+
+.leader .pos {
+  background: var(--red);
+  color: var(--white);
+}
+
+/* INGRESSOS */
+
+.tickets-section {
+  background: #101015;
+}
+
+.ticket-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.alert-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--red);
+}
+
+.tickets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.ticket-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 28px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.ticket-card h3 {
+  font-size: 1.5rem;
+}
+
+.ticket-card p {
+  color: var(--muted);
+}
+
+.ticket-label {
+  color: var(--red);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.ticket-price {
+  margin-top: 10px;
+  font-size: 1.8rem;
+}
+
+.ticket-card.featured {
+  border: 1px solid var(--red);
+}
+
+/* FORMULÁRIO DE COMPRA */
+
+.purchase-box {
+  margin-top: 55px;
+  padding: 35px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.purchase-heading {
+  margin-bottom: 30px;
+}
+
+.purchase-heading h3 {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.purchase-heading p {
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.form-group small {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.form-group textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.form-group input[type="file"] {
+  padding: 9px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+/* RODAPÉ */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 35px 7%;
+  border-top: 1px solid var(--line);
+}
+
+.footer p {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.footer > a:last-child {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer > a:last-child:hover {
+  color: var(--red);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+  .topbar {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    min-height: auto;
+    background: var(--black);
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-number {
+    font-size: 7rem;
+  }
+
+  .track-info {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .drivers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  table {
+    min-width: 620px;
+  }
+
+  td {
+    white-space: nowrap;
+  }
+
+  .tickets {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .purchase-box {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drivers {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .section-number {
+    font-size: 2.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
