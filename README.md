@@ -26,12 +26,13 @@
 
 ## 📸 Prévia do Projeto
 
-Confira abaixo uma prévia da interface desenvolvida:
 
 <div align="center">
-  <img src="img/previa-site.png" alt="Prévia do site PITWALL" width="100%">
+  <img src="https://github.com/GTawer/PITT-WALL/blob/main/Pit-Wall%20%F0%9F%8F%8E%EF%B8%8F/img/previa-site.png" alt="Prévia do site PITWALL" width="100%">
   <em>Interface do PITWALL — GP de São Paulo.</em>
 </div>
+
+---
 
 <h2>🏎️ᯓ✦ Funcionalidades e Seções</h2>
 
@@ -117,18 +118,6 @@ Confira abaixo uma prévia da interface desenvolvida:
   <li><strong>Gradientes CSS:</strong> criação de efeitos visuais, incluindo a zebra da pista.</li>
 </ul>
 
-<h2>◈ Demonstração do Projeto</h2>
-
-<p>Confira abaixo uma prévia da interface desenvolvida para o PITWALL — GP de São Paulo.</p>
-
-<h3>01. Página Principal</h3>
-
-<p>Visualização geral da página, incluindo o destaque do GP, grid de pilotos, classificação e área de ingressos.</p>
-
-<p align="center">
-  <img src="img/previa-site.png" width="100%" alt="Prévia da página principal do PITWALL">
-</p>
-
 <h2>▸ Estrutura do Projeto</h2>
 
 <p>Os arquivos foram organizados de maneira simples, separando a estrutura HTML, a estilização CSS e os recursos de imagem.</p>
@@ -172,27 +161,33 @@ PITWALL/
 
 <div align="center">
 
-  <h2>PITWALL</h2>
+  <img src="https://media.tenor.com/2Xnh-2tG8pYAAAAi/scott-pilgrim-scott-pilgrim-takes-off.gif" width="180" alt="Scott Pilgrim GIF">
+
+  <h4>PITWALL</h4>
 
   <em>Velocidade, tecnologia e desenvolvimento em cada linha de código.</em>
 
   <br><br>
 
-  <img src="https://img.shields.io/badge/Desenvolvido_com-HTML5_&_CSS3-E10600?style=for-the-badge" alt="Desenvolvido com HTML5 e CSS3">
+  ---
+
+  <div align="center">
+
+  <img src="https://media.tenor.com/2Xnh-2tG8pYAAAAi/scott-pilgrim-scott-pilgrim-takes-off.gif" width="180" alt="Scott Pilgrim GIF">
 
   <br><br>
 
   <code>HTML5</code> • <code>CSS3</code> • <code>Front-end</code> • <code>SENAI</code>
 
-  <br><br>
+  <br>
 
   <strong>PITWALL · Projeto de estudo de HTML e CSS · Feito por Gabriel de Araujo Torres</strong>
 
-  <br><br>
+  <br>
 
   <sub>© 2026 — Projeto acadêmico desenvolvido para fins educacionais.</sub>
 
-  <br><br>
+  <br>
 
   <strong>Obrigado por visitar!</strong>
 
