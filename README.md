@@ -167,21 +167,9 @@ PITWALL/
 
   <em>Velocidade, tecnologia e desenvolvimento em cada linha de código.</em>
 
-  <br><br>
-
-  ---
-
-  <div align="center">
-
-  <img src="https://media.tenor.com/2Xnh-2tG8pYAAAAi/scott-pilgrim-scott-pilgrim-takes-off.gif" width="180" alt="Scott Pilgrim GIF">
-
-  <br><br>
-
-  <code>HTML5</code> • <code>CSS3</code> • <code>Front-end</code> • <code>SENAI</code>
-
   <br>
 
-  <strong>PITWALL · Projeto de estudo de HTML e CSS · Feito por Gabriel de Araujo Torres</strong>
+  <code>HTML5</code> • <code>CSS3</code> • <code>Front-end</code> • <code>SENAI</code>
 
   <br>
 
